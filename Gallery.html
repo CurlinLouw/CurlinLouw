@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Birdz | Gallery </title>
+
+<link rel="stylesheet" type="text/css" href="Birdz.css">
+<!--script type="text/JavaScript" src="Birdz.js"></script> -->
+</head>
+<body>
+    <header>
+        <a id="homepage" href="Welcome.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+    
+<nav>    
+    <ul class="nav_links">
+        <li><a href="Dashboard.html">Dashboard</a></li>
+        <li><a href="Encyclopedia.html">Encyclopedia</a></li>
+        <li><a href="Forum.html">Forum</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="#">Contacts</a></li>
+     
+    </ul>
+</nav>
+</header>
+<div class="PicType">
+<input type="button" id = "btn1" value="First Choices">
+<input type="button" id = "btn2" value="Bird Breeding">
+<input type="button" id = "btn3" value="Our Marvelous Birds">
+</div>
+
+<div id = "FirstChoices" align="right">
+    <img src="img/budgie.jpg" width="350px" height="300px">
+    <img src="img/cardinal.jpg" width="300px" height="280px">
+    <img src="img/Common Waxbills.jpg" width="380px" height="200px">
+
+</div>
+<div id = "BirdBreeding" align="center">
+    <img src="img/Canary Chicks.jpg" width="380px" height="200px">
+</div>
+<div id = "MarvelousBirds">
+    <img src="img/macaw.jpg" width="380px" height="400px">
+    <img src="img/parakeet.jpg" width="380px" height="300px" align="right">
+</div>
+<script>
+    document.getElementsbyID("btn1").addEventListener("click", function(){
+    var FirstChoice = document.getElementsbyID("FirstChoices");
+    if(FirstChoice.style.display == "none"){
+        FirstChoice.style.display = "block";
+    }
+    else {
+        FirstChoice.style.display = "none";
+    }
+})
+</script>
+</body>
+</html>
